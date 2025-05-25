@@ -33,7 +33,8 @@ Given('que existe um usuário com ID {string}', (id) => {
 No Cucumber, cenários são casos de teste escritos em linguagem natural (Gherkin) que descrevem comportamentos esperados do sistema.
 Eles são compostos por passos que simulam ações e verificações — e servem como ponte entre negócio e automação.
 
-😎 Padrão
+😎 Padrão: 
+
 O cenário padrão é usado quando você quer descrever um fluxo com dados fixos e únicos.
 
 Scenario: Buscar um usuário
