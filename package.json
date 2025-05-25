@@ -1,0 +1,38 @@
+{
+  "name": "senac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "cypress:verify": "cypress verify",
+    "cypress:run": "cypress run  --headless --browser chrome --env TAGS='@e2e-test' --spec 'cypress/e2e/**/*.feature'",
+    "cypress:smoke-test": "cypress run --spec cypress/e2e/smoke-test.spec.js",
+    "cy:tags": "node ./cypress-tags run -e TAGS=@cadastrarcotas",
+    "cypress:ci2": "npx cypress run  --spec 'cypress/e2e/**/*.feature'",
+    "cypress:report": "node cypress/support/cucumber-html-reporter.js",
+    "cypress:ci": "npx cypress run --spec 'cypress/e2e/**/*.feature' && node cypress/support/generate-report.js",
+    "report": "node cypress/support/generate-report.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.5.1",
+    "cypress": "^13.16.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "open": "^10.1.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^3.9.2"
+  }
+}
