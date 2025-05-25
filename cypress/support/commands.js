@@ -23,3 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // Ignora erros relacionados a scripts de propaganda/ad externos
+    if (
+      err.message.includes('adplus') ||
+      err.message.includes('Cannot read properties of null') ||
+      err.message.includes('setup is not a function')
+    ) {
+      return false;
+    }
+  
+    // Permite que outros erros interrompam o teste normalmente
+    return true;
+  });
+  

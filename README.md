@@ -222,3 +222,5 @@ Este projeto serve como um exemplo prático de automação de testes usando **Cy
 ### Sites para treinar
 
 https://demoqa.com/automation-practice-form
+
+https://serverest.dev/
