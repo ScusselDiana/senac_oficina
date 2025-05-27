@@ -1,4 +1,4 @@
-# Cypress Automation - Aula de Testes com Cucumber e Page Objects
+# Cypress 
 
 ## Visão Geral
 
