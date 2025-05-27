@@ -23,7 +23,7 @@ module.exports = defineConfig({
     async setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber());
     },
-    projectId: "XXXXXX", // Adicionando o projectId aqui
+    projectId: "56cbau", // Adicionando o projectId aqui
     parallel: true, // Habilitando a execução paralela
     record: true, // Habilitando o registro dos resultados dos testes
     group: true // Agrupando os resultados dos testes em uma única execução
