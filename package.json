@@ -11,6 +11,7 @@
     "cypress:ci2": "npx cypress run  --spec 'cypress/e2e/**/*.feature'",
     "cypress:report": "node cypress/support/cucumber-html-reporter.js",
     "cypress:ci": "npx cypress run --spec 'cypress/e2e/**/*.feature' && node cypress/support/generate-report.js",
+    "cypress:ci3":"npx cypress run --record --key 9c47eb3c-bf25-4d85-a2c3-3236b4e0f4a2 --spec 'cypress/e2e/**/*.feature' && node cypress/support/generate-report.js",
     "report": "node cypress/support/generate-report.js"
   },
   "author": "",

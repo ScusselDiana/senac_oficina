@@ -1,4 +1,4 @@
-# Cypress Automation - Aula de Testes com Cucumber e Page Objects
+# Cypress 
 
 ## Visão Geral
 
@@ -219,3 +219,8 @@ Then("Eu devo ver a mensagem {string}", (message) => {
 
 Este projeto serve como um exemplo prático de automação de testes usando **Cypress**, **Cucumber** e **Page Objects**. Ele ajuda a estruturar testes de forma organizada e eficiente, permitindo a execução de cenários complexos de forma escalável e reutilizável. Lembre-se de seguir as boas práticas de codificação e usar a convenção de nomenclatura para manter o código limpo e legível.
 
+### Sites para treinar
+
+https://demoqa.com/automation-practice-form
+
+https://serverest.dev/
