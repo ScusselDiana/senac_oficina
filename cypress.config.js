@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+require('dotenv').config();
 const cucumber = require('cypress-cucumber-preprocessor').default;
 
 module.exports = defineConfig({

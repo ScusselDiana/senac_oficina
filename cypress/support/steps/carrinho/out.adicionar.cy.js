@@ -6,6 +6,7 @@ const inventory= new InventoryPage();
 
 Given('que o usuário está logado no site SauceDemo', () => {
   cy.visit('https://www.saucedemo.com');
+ 
   login.login('standard_user', 'secret_sauce');
 });
 
@@ -22,5 +23,5 @@ When('ele adiciona o produto {string}', (produto) => {
 });
 
 Then('o carrinho deve conter {int} itens', (quantidade) => {
-  inventory.cartShouldHaveItemCount(quantidade);
+  inventory.itenscarrinho(quantidade);
 });
